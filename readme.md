@@ -11,13 +11,15 @@ body {
 
 You will also find that this application makes use of clustering. When one of the clusters crash then a new one will auto spawn to take it's place.
 
-In this demo I used the Flickr API to search for completely free to use images such as `dog`, `cat`, `flowers`, etc. The image will also be cached on the server so we do not need to redownload them.
+In this demo I used the Flickr API to search for images such as `dog`, `cat`, `flowers`, etc. The image will also be cached on the server so we do not need to redownload them.
 
 ## Installing
 Clone this repo: `git clone https://github.com/FalseFlash/Pretty-Pics-API-Demo.git`
 Run `npm install`
 
-You will then need to get a [Flickr API key](https://www.flickr.com/services/api/) and update the API key in server.js. I would not suggest using these Flickr images in production unless you know the exact license of each image.
+You will then need to get a [Flickr API key](https://www.flickr.com/services/api/) and update the API key in server.js.
+
+**Note:** I would not suggest using these Flickr images in production unless you know the exact license of each image.
 
 ## Running the Application
 Simply run `node server` and then open `image.html` and refresh a few times to see the changes.
