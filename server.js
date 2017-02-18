@@ -50,7 +50,6 @@ if(cluster.isMaster)
 // Find a background and do processing if needed.
     router.get('/bg/:type', function (req, res) {
         var type = req.params.type;
-        var blur = !!req.params.blur;
         var _self = res; // This is so we can access res outside of request.
 
         flickr.get("photos.search", {tags: type, content_type: 1, extras: 'url_o'}, function (err, result) {
